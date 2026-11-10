@@ -187,8 +187,7 @@ h3 {
 .placeholder-inline,
 .placeholder-block,
 .price-placeholder,
-.disabled-link,
-.form-banner {
+.disabled-link {
   color: #5e456a;
 }
 
@@ -197,8 +196,7 @@ h3 {
   font-weight: 600;
 }
 
-.placeholder-block,
-.form-banner {
+.placeholder-block {
   padding: 1rem 1.1rem;
   background: var(--plum-100);
   border: 1px dashed var(--plum-600);
@@ -882,15 +880,6 @@ details p {
   border: 1px solid var(--cream-200);
   border-radius: var(--radius-large);
   box-shadow: var(--shadow);
-}
-
-.form-banner {
-  margin-bottom: 0.3rem;
-}
-
-.form-banner code {
-  color: var(--forest-900);
-  background: var(--cream-100);
 }
 
 .field-row {

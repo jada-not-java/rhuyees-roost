@@ -17,24 +17,20 @@ repository for `[` to find most content that still needs Haris's input. At minim
 Do not remove the placeholder notice from the testimonial section until genuine, approved quotes
 are available.
 
-## Connect the contact form
+## Contact form
 
-The form is intentionally disabled while its placeholder endpoint is present, so visitors cannot
-mistake an unconfigured form for a successful submission.
+The inquiry form is connected to the Formspree endpoint configured in `index.html`. Manage its
+notification recipient, Discord integration, spam protection, redirects, and data-retention
+settings from the [Formspree dashboard](https://formspree.io/).
 
-1. Create a form at [Formspree](https://formspree.io/) and copy its form ID.
-2. In `index.html`, replace `REPLACE_WITH_FORM_ID` with that ID:
+If the form is replaced later, update its `action` in `index.html`:
 
-   ```html
-   action="https://formspree.io/f/your-form-id"
-   ```
+```html
+action="https://formspree.io/f/your-form-id"
+```
 
-3. Remove the visible `form-banner` block after testing a real submission.
-4. Configure Formspree's notification recipient, spam protection, redirect, and data-retention
-   settings as appropriate.
-
-That single endpoint replacement activates normal Formspree submission. The JavaScript only blocks
-submission when the placeholder ID is still present.
+The JavaScript retains a safeguard that blocks submission if the endpoint is ever reset to
+`REPLACE_WITH_FORM_ID`.
 
 ## Preview locally
 
