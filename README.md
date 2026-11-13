@@ -11,11 +11,12 @@ repository for `[` to find most content that still needs Haris's input. At minim
 - Haris's bio, experience, game systems, time zone, location, and service area
 - In-person availability, group size limits, accessibility practices, and safety tools
 - Prices, booking terms, cancellation/refund policy, and any required legal language
-- Business email, social profile, any additional storefront links, and approved testimonials
+- Business email, social profile, and any additional storefront links
 - Original works, descriptions, cover art, formats, and purchase/download links
 
-Do not remove the placeholder notice from the testimonial section until genuine, approved quotes
-are available.
+The testimonials section contains short, attributed excerpts from Erica, Sarah, and Yithaja's
+public StartPlaying reviews, checked against Haris's profile on November 12, 2026.
+Keep excerpts faithful to their source and retain the attribution and source links.
 
 Online games link to [Haris's StartPlaying profile](https://startplaying.games/gm/rhuyee).
 The contact section also includes his [StartPlaying review link](https://startplaying.games/gm/rhuyee/review).
