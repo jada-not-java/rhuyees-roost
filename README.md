@@ -9,13 +9,17 @@ The site deliberately labels every unknown detail with square-bracket placeholde
 repository for `[` to find most content that still needs Haris's input. At minimum, replace:
 
 - Haris's bio, experience, game systems, time zone, location, and service area
-- Online/in-person availability, group size limits, accessibility practices, and safety tools
+- In-person availability, group size limits, accessibility practices, and safety tools
 - Prices, booking terms, cancellation/refund policy, and any required legal language
-- Business email, social profile, booking/storefront links, and approved testimonials
+- Business email, social profile, any additional storefront links, and approved testimonials
 - Original works, descriptions, cover art, formats, and purchase/download links
 
 Do not remove the placeholder notice from the testimonial section until genuine, approved quotes
 are available.
+
+Online games link to [Haris's StartPlaying profile](https://startplaying.games/gm/rhuyee).
+The contact section also includes his [StartPlaying review link](https://startplaying.games/gm/rhuyee/review).
+Keep these links current if his profile changes.
 
 ## Contact form
 
