@@ -186,7 +186,6 @@ h3 {
 
 .placeholder-inline,
 .placeholder-block,
-.price-placeholder,
 .disabled-link {
   color: #5e456a;
 }
@@ -572,7 +571,7 @@ h3 {
   line-height: 1.2;
 }
 
-.service-card .price-placeholder {
+.service-card .service-price {
   margin-top: auto;
   font-size: 0.86rem;
 }

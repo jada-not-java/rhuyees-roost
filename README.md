@@ -10,7 +10,7 @@ repository for `[` to find most content that still needs Haris's input. At minim
 
 - Haris's bio, experience, game systems, time zone, location, and service area
 - In-person availability, group size limits, accessibility practices, and safety tools
-- Prices, booking terms, cancellation/refund policy, and any required legal language
+- Service-specific quotes, booking terms, cancellation/refund policy, and any required legal language
 - Business email, social profile, and any additional storefront links
 - Original works, descriptions, cover art, formats, and purchase/download links
 
@@ -21,6 +21,12 @@ Keep excerpts faithful to their source and retain the attribution and source lin
 Online games link to [Haris's StartPlaying profile](https://startplaying.games/gm/rhuyee).
 The contact section also includes his [StartPlaying review link](https://startplaying.games/gm/rhuyee/review).
 Keep these links current if his profile changes.
+
+The services section displays the **$35 per session** online rate listed on Haris's
+StartPlaying profile, checked on November 12, 2026. The profile does not specify whether this
+is per player or per group, or establish separate one-shot, campaign, or private-event rates.
+Keep that qualification and confirm service-specific pricing before booking. Update the rate
+in `index.html` when his listed price changes.
 
 ## Contact form
 
