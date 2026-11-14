@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Rhuyee's Roost owl</title>
+  <rect width="64" height="64" rx="16" fill="#263a31"/>
+  <path d="M15 24 11 8l15 8a25 25 0 0 1 12 0l15-8-4 16c3 5 5 11 5 18 0 11-10 18-22 18S10 53 10 42c0-7 2-13 5-18Z" fill="#8f74a2"/>
+  <circle cx="24" cy="33" r="10" fill="#f5f0df"/>
+  <circle cx="40" cy="33" r="10" fill="#f5f0df"/>
+  <circle cx="25" cy="34" r="4" fill="#263a31"/>
+  <circle cx="39" cy="34" r="4" fill="#263a31"/>
+  <path d="m32 38-5 4 5 4 5-4Z" fill="#d6925f"/>
+  <path d="M19 48c7 5 19 5 26 0" fill="none" stroke="#bca7ca" stroke-width="3" stroke-linecap="round"/>
+</svg>
