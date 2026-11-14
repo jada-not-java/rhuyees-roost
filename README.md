@@ -83,8 +83,11 @@ both HTML pages.
 
 ## Deploy to GitHub Pages
 
-The workflow at `.github/workflows/pages.yml` deploys the repository root whenever `main` is
-updated. It can also be run manually from the Actions tab.
+The workflow at `.github/workflows/pages.yml` publishes the static HTML, CSS, JavaScript, and
+assets whenever `main` is updated. It can also be run manually from the Actions tab on `main`.
+The `gh-pages` branch stores the published site and its PR previews; GitHub Actions deploys
+that combined site using the official Pages artifact workflow. Keep **GitHub Actions**, not
+deployment from a branch, selected as the Pages source.
 
 After merging the site:
 
@@ -93,7 +96,26 @@ After merging the site:
 3. Run the **Deploy GitHub Pages site** workflow if it did not start automatically.
 4. Confirm the published URL is <https://jada-not-java.github.io/rhuyees-roost/>.
 
-Pull requests run a lightweight validation job but do not deploy.
+### Pull request previews
+
+Same-repository PRs targeting `main` receive a live preview at
+`https://jada-not-java.github.io/rhuyees-roost/pr-preview/pr-<number>/`. The workflow updates
+it when the PR opens, changes, or reopens, and removes its files when the PR closes or merges.
+A single bot comment links to the preview and is updated only after Pages deployment succeeds.
+
+Production stays at the root URL. Production updates preserve the `pr-preview/` directory,
+and preview updates only change their own PR directory. Publishing runs are serialized to
+avoid competing Pages deployments. Preview HTML tells search engines not to index it.
+Previews are public and include the same working contact form as production.
+
+Fork PRs still run validation but do not publish previews because their tokens cannot write
+to this repository. This workflow deliberately uses `pull_request`, not `pull_request_target`.
+Only allow trusted contributors to create same-repository branches.
+
+Under **Settings → Environments → github-pages**, ensure deployment rules allow both `main`
+and pull request refs if branch restrictions are enabled. Do not add a deployment approval
+requirement if previews should publish automatically. Before the initial site PR is merged,
+the preview can be available while the production root is still empty.
 
 ## Accessibility and maintenance
 
