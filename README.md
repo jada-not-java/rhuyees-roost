@@ -8,7 +8,7 @@ original work. It is designed for low-maintenance hosting on GitHub Pages with n
 The site deliberately labels every unknown detail with square-bracket placeholders. Search the
 repository for `[` to find most content that still needs Haris's input. At minimum, replace:
 
-- Haris's bio, experience, game systems, time zone, location, and service area
+- Haris's time zone, location, and service area
 - In-person availability, group size limits, accessibility practices, and safety tools
 - Service-specific quotes, booking terms, cancellation/refund policy, and any required legal language
 - Business email, social profile, and any additional storefront links
@@ -54,12 +54,24 @@ python -m http.server 8000
 Then open <http://localhost:8000>. A server is preferable to opening `index.html` directly because
 it mirrors how GitHub Pages serves asset paths.
 
+## Biography page
+
+`biography.html` is a standalone page linked from the homepage navigation, About teaser,
+and footer. It contains Harry's supplied biography, campaign descriptions, and full list of
+game systems, with light spelling and grammar corrections. Keep his first-person voice and
+table expectations intact when editing. Links to adventures, the library, FAQ, and booking
+return to the corresponding sections of `index.html`.
+
+Preview it at <http://localhost:8000/biography.html>. Like the homepage, it deploys directly
+to GitHub Pages with no build step.
+
 ## Customize content and design
 
-- Page content and metadata: `index.html`
+- Page content and metadata: `index.html` and `biography.html`
 - Color, typography, layout, and responsive styles: `styles.css`
 - Navigation and safe form-placeholder behavior: `script.js`
 - Original owl favicon/mark: `assets/favicon.svg`
+- Harry's biography portrait: `assets/harry-portrait.jpg`
 - Social sharing image: `assets/social-card.svg`
 
 The current fonts are loaded from Google Fonts. For a fully self-hosted site, download properly
@@ -67,7 +79,7 @@ licensed font files, commit them under `assets/fonts/`, and replace the `@import
 with local `@font-face` declarations.
 
 If the GitHub organization or repository name changes, update the `og:url` and `og:image` values in
-`index.html`.
+both HTML pages.
 
 ## Deploy to GitHub Pages
 

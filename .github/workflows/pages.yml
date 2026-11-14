@@ -28,11 +28,13 @@ jobs:
         run: |
           set -euo pipefail
           test -s index.html
+          test -s biography.html
           test -s styles.css
           test -s script.js
           test -s assets/favicon.svg
           test -s assets/social-card.svg
           grep -q '<main id="main-content">' index.html
+          grep -q '<main id="main-content">' biography.html
           grep -q 'prefers-reduced-motion' styles.css
 
   deploy:
